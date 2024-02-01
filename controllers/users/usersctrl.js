@@ -41,6 +41,7 @@ const registerUserController=async(req,res,next)=>{
        res.json({
           status:"success",
           fullname:user.fullname,
+          email:user.email,
           id: user._id
      })
   }catch(error){
