@@ -10,9 +10,11 @@ const accountsRoute = require('./routes/accounts/accountsRoute');
 const usersRoute = require('./routes/users/usersRoute');
 
 
-
+const path= require('path')
 
 const app=express();
+
+app.use(express.static(path.join(__dirname + "/public")))
  
 // middlewares
 app.use(express.json()) //pass incoming data
@@ -92,3 +94,15 @@ app.use(globalErrHandler);
 const port = process.env.PORT||3001;
 
 app.listen(port,console.log(`SERVER IS UP AND RUNNING ON PORT ${port}`));
+
+
+
+
+
+
+
+
+
+
+
+

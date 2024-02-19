@@ -28,8 +28,7 @@ const accountSchema= new mongoose.Schema({
       "Education"
     ],
     required:true,
-    default
-    :' loan'
+  
   },
 
   initialBalance:{

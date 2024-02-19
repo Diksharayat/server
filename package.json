@@ -4,7 +4,8 @@
   "description": "keeping track of your income and expences",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon index.js",
+    "build":"npm i"
   },
   "author": "Diksha",
   "license": "ISC",
